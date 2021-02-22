@@ -22,6 +22,6 @@
         return Math.round(Math.random() * (max - min) + min);
     }
 
-    document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
+    (<HTMLInputElement>document.getElementById('guess-form')).addEventListener("submit", compareUserGuess);
 
 })();
