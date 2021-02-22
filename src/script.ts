@@ -1,7 +1,5 @@
 ( () => {
-    document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
-
-  const compareUserGuess = (event) => {
+    const compareUserGuess = (event: any): void => {
         event.preventDefault();
 
         const secretNumber: number = generateSecretNumber();
@@ -14,13 +12,16 @@
         }
     }
 
- const generateSecretNumber = () => {
+    const generateSecretNumber = ():number => {
         const secretNumber: number = getRandomArbitrary(1, 22);
 
         return secretNumber;
     }
 
-  const getRandomArbitrary = (min, max) => {
+    const getRandomArbitrary = (min:number, max:number): number => {
         return Math.round(Math.random() * (max - min) + min);
     }
+
+    document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
+
 })();
