@@ -16,5 +16,5 @@ The goal of this exercise is not to know everything there is in TypeScript, but 
 
 ## ⚙️ Tools 
 
-* VSCode: Markdown, TypeScript, HTM
+* VSCode: Markdown, TypeScript, HTML 
 * NPM: Webpack
